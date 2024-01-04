@@ -24,7 +24,7 @@ Make sure you have the following installed before using this template:
 ## Install with Cookiecutter
 
 ```bash
-$ cookiecutter https://github.com/mrcartoonster/graphene_cookiecutter.git
+cookiecutter https://github.com/mrcartoonster/graphene_cookiecutter.git
 ```
 ## Structure
 
