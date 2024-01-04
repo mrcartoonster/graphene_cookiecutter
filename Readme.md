@@ -30,15 +30,24 @@ $ cookiecutter https://github.com/mrcartoonster/graphene_cookiecutter.git
 
 The project structure is organized as follows:
 
-```
-{{cookiecutter.project
-├── app/
-│   ├── main.py          # FastAPI main application file
-│   ├── models.py        # GraphQL schema models
-│   └── schema.py        # GraphQL schema definitions
-├── .vercel/             # Vercel deployment configurations
-├── requirements.txt     # Python dependencies
-└── README.md            # Project documentation
+```bash
+{{cookiecutter.project}}
+├── app
+│   ├── db
+│   │   ├── database.py
+│   │   ├── data.py
+│   │   ├── __init__.py
+│   │   └── models.py
+│   ├── gql
+│   │   ├── __init__.py
+│   │   ├── mutations.py
+│   │   ├── queries.py
+│   │   └── types.py
+│   ├── __init__.py
+│   └── utils.py
+├── main.py
+├── requirements.txt
+└── vercel.json
 ```
 
 ## Contributing
