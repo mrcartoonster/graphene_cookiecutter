@@ -9,7 +9,9 @@ cfgv==3.4.0
 click==8.1.7
 distlib==0.3.8
 dnspython==2.4.2
+doppler-env==0.3.1
 email-validator==2.1.0.post1
+environs==10.3.0
 fastapi==0.105.0
 filelock==3.13.1
 Flask==3.0.0
