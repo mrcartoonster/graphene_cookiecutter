@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # from fastapi import FastAPI
 # from graphene import Schema
 
@@ -15,16 +16,17 @@
 # """
 # This is deprecated!
 # Will probably remove it and
-# replace it with lifespan. 
+# replace it with lifespan.
 # """
 # @app.on_event("startup")
 # def startup_event():
 #     prepare_database()
-
 """
-We'll pass an endpoint that will return all
-resources of what the GraphQL's returning.
+We'll pass an endpoint that will return all resources of what the
+GraphQL's returning.
+
 This is so we'll have a simple REST endpoint.
+
 """
 # @app.get("/{something}")
 # def get_something():
