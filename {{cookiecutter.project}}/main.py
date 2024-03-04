@@ -1,26 +1,25 @@
- -*- coding: utf-8 -*-
-from fastapi import FastAPI
-from graphene import Schema
+# from fastapi import FastAPI
+# from graphene import Schema
 
-from starlette_graphene3 import GraphQLApp, make_graphiql_handler
-# from starlette_graphene3 import GraphQLApp, make_playground_handler
+# from starlette_graphene3 import GraphQLApp, make_graphiql_handler
+# # from starlette_graphene3 import GraphQLApp, make_playground_handler
 
-from app.db.database import prepare_database
-from app.gql.mutations import Mutation
-from app.gql.queries import Query
+# from app.db.database import prepare_database
+# from app.gql.mutations import Mutation
+# from app.gql.queries import Query
 
-schema = Schema(query=Query, mutation=Mutation)
+# schema = Schema(query=Query, mutation=Mutation)
 
-app = FastAPI()
+# app = FastAPI()
 
-"""
-This is deprecated!
-Will probably remove it and
-replace it with lifespan. 
-"""
-@app.on_event("startup")
-def startup_event():
-    prepare_database()
+# """
+# This is deprecated!
+# Will probably remove it and
+# replace it with lifespan. 
+# """
+# @app.on_event("startup")
+# def startup_event():
+#     prepare_database()
 
 """
 We'll pass an endpoint that will return all
