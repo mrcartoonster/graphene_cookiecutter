@@ -1,0 +1,4 @@
+pur==7.3.1
+pytest==8.1.1
+pytest-clarity==1.0.1
+yakutils==2.0.0
